@@ -87,7 +87,10 @@ git push -u origin <branch>  #推送并关联指定分支到远程库
 
 ```
 git clone git@server-name:path/repo-name.git  #将远程仓库克隆到当前目录
-git pull  #拉取远程仓库内容
+git pull  #在clone后，可拉取远程仓库最新的提交内容
+
+ps:多人协作时，clone到本地的仓库是看不到分支的，想显示并修改分支可以输入以下命令
+   git checkout -b <branch> origin/<branch>
 ```
 
 ##### 分支管理
@@ -97,7 +100,7 @@ git checkout <branch>  #切换到指定分支
 git checkout -b <branch>  #创建并切换到该分支
 git branch  #查看现有分支
 git branch -d <branch>  #删除指定分支
-git branch --set-upstream <branch_local> <branch_remote>  #指定本地分支与远程分支的链接
+git branch --set-upstream <branch_local> <branch_remote>  #指定本地分支与远程分支的链接-> 多人合作pull失败时可用
 git merge <branch>  #合并指定分支到当前分支
           --no-ff <branch>  #禁用快速合并
 git merge --no-ff -m "提交说明" <branch>  #普通方式合并，并附提交说明
@@ -113,7 +116,10 @@ git branch -D <branch>  #强制删除分支（常用于未合并的分支）
 - 多人协作
 
 ```
-##error: failed to push some refs to ...
+## 由于小伙伴先推送了提交，而你恰好和他修改了同一文件且发生冲突：
+## error: failed to push some refs to ... 
+## 解决方案如下：
+
 1. git pull 远程库
 2. 解决冲突（若有），再push
 ```
