@@ -4,7 +4,7 @@
 - 建议看完教程后再看Git官网的 [Pro Git](https://git-scm.com/book/zh/v2) 一书。
 - 最后附上本人的 [GitHub](https://github.com/caozhiqiango) ，感谢拨冗翻阅拙作,敬请斧正。
 
-##### 创建版本库
+##### [创建版本库](#1)
 ```
 git init  #初始化所在目录为Git仓库
 ```
@@ -18,6 +18,7 @@ git commit -m "提交说明"  #从暂存区提交到版本库
 ```
 > git add 命令可多次执行，然后commit一次。
 
+<h1 id=1>niubi<h1>
 ##### 时光机穿梭
 - 查看状态、差异
 
