@@ -4,7 +4,7 @@
 - 建议看完教程后再看Git官网的 [Pro Git](https://git-scm.com/book/zh/v2) 一书。
 - 最后附上本人的 [GitHub](https://github.com/caozhiqiango) ，感谢拨冗翻阅拙作,敬请斧正。
 
-[跳转](#1)
+<p id=jump>[跳转](#1)</p>
 ##### 创建版本库
 ```
 git init  #初始化所在目录为Git仓库
